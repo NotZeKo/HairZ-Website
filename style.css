@@ -1,0 +1,47 @@
+body {
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 .5rem;
+}
+
+.header {
+    background-color: #4b9097;
+    max-height: 108px;
+}
+
+div > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+ul > li{
+    border: 5px solid rgb(27, 33, 48);
+    border-radius: 5px;
+    padding: 10px;
+    background-color:rgb(27, 33, 48);
+}
+
+.logo {
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 2rem;
+    color: white;
+    background: rgb(27,33,53);
+    background: linear-gradient(180deg, rgba(27,33,53,1) 0%, rgba(18,23,44,1) 100%); 
+}
