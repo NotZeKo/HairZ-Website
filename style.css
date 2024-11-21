@@ -1,12 +1,45 @@
+@font-face {
+    font-family: "Arimo";
+    src: url("./fonts/Arimo-Bold/Arimo-Bold.woff");
+}
+@font-face {
+    font-family: "Change";
+    src: url("./fonts/ChangaOne/ChangaOne-Regular.woff");
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("./fonts/Comfortaa/Comfortaa-Regular.woff");
+}
+
+
 * {
     box-sizing: border-box;
+}
+
+p {
+    font-family: "Arimo", serif;
+}
+
+.card > h3 {
+    font-family: "Arimo", serif;
+}
+
+span > h2 {
+    font-family: "Change", serif;
+}
+
+.featured > h3 {
+    font-family: "Comfortaa", serif;
+}
+
+.hairstyle > h4 {
+    font-family: "Comfortaa", serif;
 }
 
 img {
     transform: scaleX(-1);
     width: 100%;
     height: auto;
-    
 }
 
 body {
@@ -79,8 +112,6 @@ span > h2 {
     color: rgb(27, 33, 48);
 }
 
-.card {
-}
 
 .card-container {
     display: flex;
@@ -94,6 +125,38 @@ span > h2 {
     border: 3px solid #5FB3BD;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: right;
+    transform: skewY(-8deg);
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: 160px;
+    right: 0;
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transform: skewY(8deg);
+    z-index: -1;
+    filter: blur(8px);
 }
 
 .card > h3 {
